@@ -11,7 +11,10 @@ import Foundation
 print("Hello, World!")
 
 
-let app = Application(result: ConvertResult(service: SimpleService(), input: Input()))
+let app = Application(
+        result: ConvertResult(
+                service: SimpleService(),
+                input: Input()))
 
 app.run()
 

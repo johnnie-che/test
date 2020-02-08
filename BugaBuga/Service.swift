@@ -16,7 +16,7 @@ protocol Service {
 final class SimpleService: Service {
 
     func convert(_ input: String) -> String {
-        return input.reduce(into: "") { $0 = String($1) + $0 }
+        input.reduce(into: "") { $0 = String($1) + $0 }
     }
 
 }
